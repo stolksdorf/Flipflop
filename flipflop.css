@@ -1,0 +1,43 @@
+/*
+    version : 1.0.0
+    author  : scott tolksdorf
+    license : WTFPL
+    site    : github.com/stolksdorf/Flipflop
+*/
+
+.flipflop{
+    -webkit-perspective: 600px;
+    -moz-perspective   : 600px;
+}
+
+.flipflop .flipflop__front, .flipflop .flipflop__back{
+    -webkit-transform-style    : preserve-3d;
+       -moz-transform-style    : preserve-3d;
+    -webkit-backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+    -webkit-transition         : all .4s ease-in-out;
+       -moz-transition         : all .4s ease-in-out;
+        -ms-transition         : all .4s ease-in-out;
+         -o-transition         : all .4s ease-in-out;
+            transition         : all .4s ease-in-out;
+}
+
+.flipflop .flipflop__front{
+    -webkit-transform : rotateX(0deg) rotateY(0deg);
+       -moz-transform : rotateX(0deg) rotateY(0deg);
+}
+
+.flipflop .flipflop__back{
+    -webkit-transform : rotateY(-180deg);
+       -moz-transform : rotateY(-180deg);
+}
+
+.flipflop.flipped .flipflop__front{
+    -webkit-transform : rotateY(180deg);
+       -moz-transform : rotateY(180deg);
+}
+
+.flipflop.flipped .flipflop__back{
+    -webkit-transform : rotateY(0deg);
+       -moz-transform : rotateY(0deg);
+}
