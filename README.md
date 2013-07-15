@@ -1,4 +1,4 @@
-Fakejax
+Flipflop.css
 =======
 
-Captures outgoing ajax requests and simulates responses client-side for testing
+Incredibly simple css for card flip animations
